@@ -1,0 +1,27 @@
+# Python Requirements for Visitor Counting System
+# Python 3.12 with CUDA-enabled PyTorch for RTX 5060 Ti
+
+# IMPORTANT: Install PyTorch FIRST with the appropriate command:
+# For CUDA 12.1: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# For CUDA 11.8: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# Core Dependencies
+ultralytics>=8.3.0          # YOLOv11 and tracking
+opencv-python>=4.8.0        # Video processing
+opencv-contrib-python>=4.8.0 # Additional OpenCV features
+numpy>=1.24.0               # Numerical operations
+requests>=2.31.0            # HTTP requests for ThingsBoard
+
+# Optional but Recommended
+lap>=0.4.0                  # Linear Assignment Problem solver (improves tracking)
+pandas>=2.0.0               # Data manipulation (if logging to CSV)
+
+# Development Dependencies (optional)
+pytest>=7.4.0               # Testing
+black>=23.0.0               # Code formatting
+flake8>=6.0.0               # Linting
+
+# Note: PyTorch versions
+# torch>=2.1.0 (install with CUDA)
+# torchvision>=0.16.0 (install with CUDA)
+# torchaudio>=2.1.0 (install with CUDA)

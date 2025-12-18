@@ -1,0 +1,25 @@
+# ByteTrack Tracker Configuration for Ultralytics YOLO
+# Optimized for people counting in RTSP streams
+
+# Tracker type
+tracker_type: bytetrack
+
+# Detection confidence thresholds
+track_high_thresh: 0.5      # High confidence threshold for starting new tracks
+track_low_thresh: 0.1       # Low confidence threshold for maintaining existing tracks
+new_track_thresh: 0.6       # Confidence threshold for creating new tracks
+
+# Track management
+track_buffer: 30            # Number of frames to keep lost tracks alive
+match_thresh: 0.8           # IoU threshold for matching detections to tracks
+
+# Frame rate (adjust based on your RTSP stream)
+frame_rate: 30              # Expected frame rate for temporal calculations
+
+# Distance metric
+proximity_thresh: 0.5       # Threshold for spatial proximity
+appearance_thresh: 0.25     # Threshold for appearance similarity (if using ReID)
+
+# Additional parameters
+min_box_area: 100          # Minimum bounding box area (pixels²)
+aspect_ratio_thresh: 1.6    # Maximum aspect ratio for person detections

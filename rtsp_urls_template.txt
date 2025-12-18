@@ -1,0 +1,31 @@
+# RTSP Camera URLs Configuration
+# Add one RTSP URL per line
+# Lines starting with # are ignored (comments)
+
+# Format: rtsp://username:password@ip_address:port/stream_path
+# Example: rtsp://admin:12345@192.168.5.227/71
+
+# Camera 1 - Main Entrance
+rtsp://admin:12345@192.168.5.227/71
+
+# Camera 2 - Side Entrance
+# rtsp://admin:12345@192.168.5.228/71
+
+# Camera 3 - Exit
+# rtsp://admin:12345@192.168.5.229/71
+
+# Camera 4 - Lobby
+# rtsp://admin:12345@192.168.5.230/71
+
+# Camera 5 - Hallway
+# rtsp://admin:12345@192.168.5.231/71
+
+# Notes:
+# - Remove # to enable a camera
+# - Ensure camera is accessible from your network
+# - Test URL with VLC: Media > Open Network Stream
+# - Default RTSP port is 554 (if not specified)
+# - Some cameras use different stream paths:
+#   - /stream1 or /stream2 (different quality)
+#   - /h264 or /h265 (codec type)
+#   - /live or /live.sdp (different formats)
