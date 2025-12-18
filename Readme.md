@@ -5,14 +5,23 @@ Industry-standard visitor counting system using YOLOv11n and ByteTrack for real-
 ## Features
 
 ✅ **Multi-Camera Support** - Process multiple RTSP streams simultaneously
+
 ✅ **Interactive Setup** - Easy ROI and counting line configuration
+
 ✅ **Persistent Configuration** - Settings saved and reused
+
 ✅ **Advanced Tracking** - YOLOv11n with ByteTrack for accurate people counting
-✅ **GPU Accelerated** - Optimized for NVIDIA RTX 5060 Ti
+
+✅ **GPU Accelerated** - Optimized for NVIDIA RTX
+
 ✅ **Flexible Counting Lines** - Draw curved/irregular lines, set custom directions
+
 ✅ **ThingsBoard Integration** - Real-time telemetry posting
+
 ✅ **Robust Error Handling** - Auto-recovery from stream interruptions
+
 ✅ **Frame Rate Control** - Process at specified FPS while avoiding buffer buildup
+
 ✅ **Efficient Resource Management** - Share model instances across cameras
 
 ## Quick Start
